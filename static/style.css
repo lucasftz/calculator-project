@@ -1,38 +1,59 @@
 .container {
     max-width: 400px;
-    margin: 20vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     background-color: black;
 }
 
 .display {
-    background-color: grey;
+    background-color: slategray;
     border-color: black;
     border-style: outset;
     border-radius: 15px;
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 200px;
+    max-height: 200px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
+.display-current {
+    text-size-adjust: 30px;
+    padding-top: 1rem;
+}
+
 .display-result {
-    position: relative;
-    right: 0;
+    text-align: end;
 }
 
 .buttons {
     text-align: center;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 1fr;
-    min-height: 200px;
+    min-height: 300px;
 }
 
 .button {
-    background-color: gray;
-    border-color: grey;
+    background-color: lightsteelblue;
+    border-color: lightsteelblue;
     border-style: outset;
     border-radius: 5px;
     cursor: pointer;
+    line-height: 250%;
+}
+
+.operation {
+    background-color: slategray;
+    border-color: slategray;
+}
+
+.function {
+    background-color: slategray;
+    border-color: slategray;
+}
+
+.equal {
+    background-color: slategray;
+    border-color: slategray;
+    grid-column: span 2;
 }
