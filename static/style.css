@@ -1,11 +1,19 @@
-.container {
-    max-width: 400px;
-    margin: 10vh auto 0 auto;
+body {
     background-color: black;
 }
 
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    background-color: grey;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1rem;
+    border-radius: 10px;
+}
+
 .display {
-    background-color: slategray;
+    background-color: lightgray;
     border-color: black;
     border-style: outset;
     border-radius: 15px;
