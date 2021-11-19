@@ -1,0 +1,10 @@
+.container {
+    max-width: 400px;
+}
+
+.button {
+    background-color: gray;
+    border-color: grey;
+    border-style: outset;
+    border-radius: 5px;
+}
