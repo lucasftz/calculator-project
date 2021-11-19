@@ -1,5 +1,32 @@
 .container {
     max-width: 400px;
+    margin: 20vh auto 0 auto;
+    background-color: black;
+}
+
+.display {
+    background-color: grey;
+    border-color: black;
+    border-style: outset;
+    border-radius: 15px;
+    min-height: 100px;
+    max-height: 100px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.display-result {
+    position: relative;
+    right: 0;
+}
+
+.buttons {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 1fr;
+    min-height: 200px;
 }
 
 .button {
@@ -7,4 +34,5 @@
     border-color: grey;
     border-style: outset;
     border-radius: 5px;
+    cursor: pointer;
 }
