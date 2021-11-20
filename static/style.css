@@ -42,26 +42,14 @@ body {
 }
 
 .button {
-    background-color: lightsteelblue;
-    border-color: lightsteelblue;
-    border-style: outset;
+    background-color: slategray;
     border-radius: 5px;
-    cursor: pointer;
-    line-height: 250%;
 }
 
-.operation {
-    background-color: slategray;
-    border-color: slategray;
-}
-
-.function {
-    background-color: slategray;
-    border-color: slategray;
+.number {
+    background-color: lightsteelblue;
 }
 
 .equal {
-    background-color: slategray;
-    border-color: slategray;
     grid-column: span 2;
 }
