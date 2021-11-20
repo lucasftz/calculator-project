@@ -43,13 +43,14 @@ body {
     min-height: 300px;
 }
 
-.button {
+.buttons > button {
     background-color: slategray;
     border-radius: 5px;
     font-size: 2rem;
+    cursor: pointer;
 }
 
-.number {
+.buttons > .number {
     background-color: lightsteelblue;
 }
 
