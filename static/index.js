@@ -2,10 +2,12 @@ let previousNums = '';
 let currentNums = '';
 let operation;
 
+
 $('.number').on('click', function(e) {
     currentNums += e.currentTarget.innerHTML;
     $('.display-current').html(currentNums);
 });
+
 
 $('.operation, .equal').on('click', function(e) {
     if (!!previousNums) {
