@@ -30,7 +30,7 @@ $('.operation, .equal').on('click', function(e) {
         }
         $('.display-previous').html(previousNums);
         $('.display-current').html(currentNums);
-    } else {
+    } else if (e.currentTarget.innerHTML !== '=') {
         previousNums = currentNums + e.currentTarget.innerHTML;
         currentNums = ''
         $('.display-previous').html(previousNums);
