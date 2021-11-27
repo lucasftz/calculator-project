@@ -4,7 +4,11 @@ let operation;
 
 
 $('.number').on('click', function(e) {
-    currentNums += e.currentTarget.innerHTML;
+    if (e.currentTarget.innerHTML !== '.') {
+        currentNums += e.currentTarget.innerHTML;
+    } else if (!currentNums.includes('.')) {
+        currentNums += e.currentTarget.innerHTML;
+    }
     $('.display-current').html(currentNums);
 });
 
