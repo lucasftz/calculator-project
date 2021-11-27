@@ -47,3 +47,11 @@ $('.all-clear').on('click', function() {
     $('.display-previous').html(previousNums);
     $('.display-current').html(currentNums);
 });
+
+
+$('.delete').on('click', function() {
+    if (!!currentNums) {
+        currentNums = currentNums.slice(0, -1);
+    }
+    $('.display-current').html(currentNums);
+});
