@@ -14,12 +14,16 @@ $('.operation, .equal').on('click', function(e) {
         switch (previousNums.slice(-1)) {
             case '÷':
                 operation = function(a, b) {return a / b};
+                break;
             case '×':
                 operation = function(a, b) {return a * b};
+                break;
             case '−':
                 operation = function(a, b) {return a - b};
+                break;
             case '+':
                 operation = function(a, b) {return a + b};
+                break;
         }
 
         if (e.currentTarget.innerHTML === '=') {
