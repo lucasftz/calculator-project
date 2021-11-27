@@ -38,14 +38,12 @@ $('.operation, .equal').on('click', function(e) {
             previousNums += e.currentTarget.innerHTML;
             currentNums = ''
         }
-        $('.display-previous').html(previousNums);
-        $('.display-current').html(currentNums);
     } else if (e.currentTarget.innerHTML !== '=' && !!currentNums) {
         previousNums = currentNums + e.currentTarget.innerHTML;
         currentNums = ''
-        $('.display-previous').html(previousNums);
-        $('.display-current').html(currentNums);
     }
+    $('.display-previous').html(previousNums);
+    $('.display-current').html(currentNums);
 });
 
 
