@@ -40,7 +40,7 @@ $('.operation, .equal').on('click', function(e) {
         }
     } else if (e.currentTarget.innerHTML !== '=' && !!currentNums) {
         previousNums = currentNums + e.currentTarget.innerHTML;
-        currentNums = ''
+        currentNums = '';
     }
     $('.display-previous').html(previousNums);
     $('.display-current').html(currentNums);
@@ -58,6 +58,18 @@ $('.all-clear').on('click', function() {
 $('.delete').on('click', function() {
     if (!!currentNums) {
         currentNums = currentNums.slice(0, -1);
+    }
+    $('.display-current').html(currentNums);
+});
+
+
+$('.negative').on('click', function() {
+    if (!!currentNums) {
+        if (currentNums.includes('-')) {
+            currentNums = currentNums.slice(1, currentNums.length);
+        } else {
+            currentNums = '-' + currentNums;
+        }
     }
     $('.display-current').html(currentNums);
 });
