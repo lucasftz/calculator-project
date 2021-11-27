@@ -39,3 +39,11 @@ $('.operation, .equal').on('click', function(e) {
         $('.display-current').html(currentNums);
     }
 });
+
+
+$('.all-clear').on('click', function() {
+    previousNums = '';
+    currentNums = '';
+    $('.display-previous').html(previousNums);
+    $('.display-current').html(currentNums);
+});
